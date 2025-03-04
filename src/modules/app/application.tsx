@@ -56,7 +56,7 @@ export function Application() {
       // Sivilforsvarsdistrikter layer
       new VectorLayer({
         source: new VectorSource({
-          url: "http://localhost:5174/kws2100-arbeidskrav-Nadahm3d/geojson/Sivilforsvarsdistrikter.geojson",
+          url: "/KW-arbeidskrav/geojson/Sivilforsvarsdistrikter.geojson",
           format: new GeoJSON(),
         }),
         style: new Style({
@@ -73,7 +73,7 @@ export function Application() {
       // Tilfluktsrom layer
       (tilfluktsromLayer = new VectorLayer({
         source: new VectorSource({
-          url: "http://localhost:5174/kws2100-arbeidskrav-Nadahm3d/geojson/Offentlige tilfluktsrom.geojson",
+          url: "/KW-arbeidskrav/geojson/Offentlige tilfluktsrom.geojson",
           format: new GeoJSON(),
         }),
         style: tilfluktsromStyle,
